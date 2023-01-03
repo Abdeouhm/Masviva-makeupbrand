@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<title>MasViva</title>
+<link rel="icon" href="img/logopro.png"/>
+<style>
+    *{
+        font-family: sans-serif;
+        margin: 0px;
+    }
+
+    ::-webkit-scrollbar{
+        background: #f5f3f4;
+        width: 20px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: #b42152;
+    }
+#contact{
+    width: 100%;
+    height: 40px;
+    background: #b42152;
+    display: flex;
+
+}
+#social{
+    width: 50%;
+    height: 100%;
+}
+#phone{
+    width: 50%;
+    height: 100%;
+}
+#contact p{
+    color: #252222;
+    font-size: 1rem;
+    padding: 10px;
+    float: left;
+    font-family: 'Unbounded', cursive;
+}
+#contact h3{
+    color: #252222;
+    float: right;
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'Unbounded', cursive;
+}
+#num{
+    color: #ff6196;
+    padding: 10px;
+}
+
+#sepe{
+    width: 10px;
+    height: 40px;
+    background: hsl(0, 4%, 14%);
+    float: left;
+}
+#contact img{
+width: 3%;
+margin-top: 10px;
+margin-left: 10px;
+float: left;
+}
+#contact img:hover{
+    scale: 1.1;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 70%;
+}
+header{
+    width: 100%;
+height: 80px;
+background: white;
+
+}
+#trailer{
+   background: url(img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    width: 100%;
+    height: 500px;
+}
+#info{
+    width: 100%;
+    height: 200px;
+}
+#head-logo{
+width: 25%;
+height: 80px;
+float: left;
+position: relative;
+}
+#head-logo img{
+    width: 50%;
+    height: 120%;
+}
+
+
+
+#head-info{
+    width: 40%;
+    height: 100%;
+    
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+}
+#head-more img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    position: absolute;
+    transition: 1s;
+}
+#head-logo h1{
+    color: black;
+    font-size: 1rem;
+    float: right;
+    font-family: 'Unbounded', cursive;
+    line-height: 2;
+    font-size: 2.4rem;
+}
+span{
+    font-family: 'Unbounded', cursive;
+    color: #ff6196;
+}
+#head-more{
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+ul{
+    display: flex;
+    line-height: 5;
+    float: left;
+}
+ul li{
+    padding-left: 1.5rem;
+    list-style-type: none;
+    /*font-family: 'Unbounded', cursive;*/
+    font-family: 'Varela Round', sans-serif;
+    /*font-family: 'Dancing Script', cursive;*/
+}
+li:hover{
+    color: #b42152;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#start{
+    width: 150px;
+    height: 50px;
+    background: #b42152;
+    margin-top: 15px;
+    border-radius: 50px;
+    top: 1%;
+    left: 15%;
+    position: absolute;
+    transition: 1s;
+}
+#start p{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+
+}
+#start:hover{
+    background: black;
+    color: #b42152;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#trailer{
+    position: relative;
+}
+#trailer p{
+    color: #b42152;
+    font-family: 'Varela Round', sans-serif;
+position: absolute;
+left: 7%;
+top: 15%;
+font-weight: bolder;
+}
+#trailer h2{
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    left: 7%;
+    top: 20%;
+    color: white;
+    font-size: 6rem;
+}
+#trailer #descr{
+    position: absolute;
+    left: 7%;
+    top: 45%;
+    width: 240px;
+    color:#ff6196;
+    
+}
+input{
+    top: 15%;
+    position: absolute;
+    left: 1%;
+    visibility: hidden;
+    max-width: 230px;
+    transition: 1.6s;
+}
+#info{
+    width: 100%;
+    
+    background: white;
+}
+#tit1{
+    font-family: 'Bebas Neue', cursive;
+    color: #b42152;
+    padding: 20px;
+    font-size: 3rem;
+
+
+}
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#container article{
+width: 20%;
+height: 300px;
+background: #fffdfe;
+
+text-align: center;
+}
+#container article img{
+    width: 20%;
+    margin: 20px;
+}
+#container article h2{
+    color: #b42152;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 10px;
+}
+#container article p{
+    color: black;
+    font-family: 'Unbounded', cursive;
+    padding: 10px;
+    font-size: 0.8rem;
+
+}
+@media screen and (max-width:800px)
+{
+    #social{
+    width: 100%;
+    height: 100%;
+    
+}
+#phone{
+    display: none;
+}
+
+#contact p{
+    font-size: 1rem;
+    
+}
+ul{
+    display: none;
+}
+#more{
+    visibility: visible;
+}
+#head-logo h1{
+    font-size: 2rem;
+    float: left;
+    padding: 10px;
+}
+#head-info{
+    width: 0;
+}
+#head-logo{
+    width: 50%;
+  
+}
+#head-more{
+    width: 50%;
+    position: relative;
+}
+#start{
+    display: none;
+}
+#search{
+    display: none;
+}
+#more{
+    visibility: visible;
+}
+#trailer h2{
+font-size: 4rem;
+}
+#trailer #descr{
+    font-size: 0.6rem;
+    top: 35%;
+}
+#container{
+    display: flex;
+    
+    justify-content: space-between;
+    width: 100%;
+    
+}
+#tit1{
+padding: 10px;
+
+}
+
+
+}
+#more{
+    width: 50px;
+    height: 50px;
+    top: 10%;
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+
+
+
+
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+
+
+
+<meta charset="utf-8"/>
+
+
+</head>
+<body>
+<div id="contact">
+<div id="social">
+    <p>Connect With Us:</p>
+<img src="https://cdn.icon-icons.com/icons2/1/PNG/96/social_facebook_fb_35.png" alt="">
+<img src="https://cdn.icon-icons.com/icons2/2428/PNG/96/instagram_black_logo_icon_147122.png" alt="">
+<img src="https://cdn.icon-icons.com/icons2/3161/PNG/96/twitter_social_media_network_icon_193319.png" alt="">
+<img src="https://cdn.icon-icons.com/icons2/917/PNG/512/vimeo_online_social_media_icon-icons.com_71878.png" alt="">
+</div>
+<div id="phone">
+<p>info@MasViva.com</p>
+<div id="sepe"></div>
+<p>Call Us Now:<span id="num">214 443 4211</span></p>
+</div>
+</div>
+
+
+<header class="shadow">
+<div id="head-logo">
+<h1>Mas<span>Viva</span></h1>
+</div>
+<div id="head-info">
+<ul>
+    <li>HOME</li>
+    <li>ABOUT US</li>
+    <li>BLOG</li>
+    <li>CONTACT</li>
+    <li>PAGES</li>
+</ul>
+<img id="more"    src="https://cdn.icon-icons.com/icons2/1659/PNG/96/3844438-hamburger-menu-more-navigation_110319.png" alt="">
+</div>
+<div id="head-more">
+
+    <input type="search"  id="input" class="form-control m-2">
+    <img src="https://cdn.icon-icons.com/icons2/1659/PNG/96/3844432-magnifier-search-zoom_110300.png" alt="" id="search" onmouseover="move()">
+    <div id="start">
+    <p>Get Started</p>
+</div>
+
+</div>
+
+
+</header>
+<section id="trailer" onmouseover="out()">
+<p>We are here to</p>
+<h2>Serve You</h2>
+<p id="descr">MasViva is the best place to purchase and inquire makeup</p>
+    
+</section>
+<section id="info">
+<h3 id="tit1">Site features</h3>
+<div id="container">
+<article>
+<img src="https://cdn.icon-icons.com/icons2/3553/PNG/512/online_purchase_trolley_shopping_cart_ecommerce_icon_224940.png" alt="">
+<h2>Purchase Products</h2><p>You can purchase makeup products of the highest quality and from the best brands at reasonable prices via MasViva</p>
+</article>
+<article>
+    <img src="https://cdn.icon-icons.com/icons2/1863/PNG/96/how-to-reg_119041.png" alt="">
+    <h2>How To Use</h2><p>We'll Show you How to Use Makeup Products the right way to ensure the best service</p>
+    </article>
+    <article>
+        <img src="https://cdn.icon-icons.com/icons2/2346/PNG/96/products_filled_icon_142867.png" alt="">
+        <h2>Benifites of products</h2><p>we'll Show you All the benefites you need to know about product</p>
+        </article>
+        <article>
+            <img src="https://cdn.icon-icons.com/icons2/2783/PNG/96/tips_icon_177159.png" alt="">
+            <h2>Tips about products</h2><p>MasViva Provides tips for you in the field of beauty and makeup</p>
+            </article>
+
+
+</div>
+
+</section>
+
+
+<footer>
+
+</footer>
+
+
+
+<script>
+
+
+function move(){
+    var search = document.getElementById("search");
+var start = document.getElementById("start");
+var input = document.getElementById("input");
+
+input.style.visibility=`visible`;
+start.style.left=`90%`
+    search.style.left=`60%`
+   
+}
+function out(){
+    var search = document.getElementById("search");
+var start = document.getElementById("start");
+var input = document.getElementById("input");
+
+input.style.visibility=`hidden`;
+start.style.left=`15%`
+    search.style.left=`0%`
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+<script>
+
+
+
+    </script>
+
+
+
+
+
+
+</html>
